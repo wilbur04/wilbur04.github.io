@@ -1,5 +1,5 @@
 var hello = "hello from Earth";
-var strings1 = ' He said “My name is Elliott” '
+var strings1 = "He said \“My name is Elliott\” "
 
 function function1(num) {
     return num * num;

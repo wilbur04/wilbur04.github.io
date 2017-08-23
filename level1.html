@@ -3,6 +3,7 @@
 <head>
     <title> Level1 </title>
     <script src="js/level1.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -56,36 +57,30 @@
             <br><b>Input-> 2 Output -> 4</b><br> Call your function and output your result via one of the three methods.
         </p>
 
-        <button type="button" onclick="printName()"> call function</button>
+        <input type="submit" class="btn" onclick="printName()" value="call function">
         <br>
-
-
         <h2>EVENTS 1 </h2>
         <p>
             Create a HTML button that calls a function when clicked.<br> The function that it calls should increase the age
             of your person object.
         </p>
-        <button type="button" onclick="events1()"> increase age</button>
-
-        <br>
-        <br>
+        <input type="submit" class="btn" onclick="events1()" value="Increase age">
+        <br><br>
         <div>
             <h2>FUNCTIONS 3 / EVENTS 2</h2>
             <P>
                 Create a series of textboxes and buttons that let you create a Person object with data from the textboxes, output your Person
                 object, as well as edit your Person object.
             </P>
-
-
-            Name:<br> <input type="text" name="name" id="name">
+            <br>Name:<br> <input type="text" name="name" id="name">
             <br> Age: <br><input type="number" id="age">
             <br> Occupation: <br><input type="text" name="name" id="occupation">
             <br><br>
-            <input type="submit" value="Submit" id="editSubmit" onClick="event2()">
+            <input type="submit" class="btn" value="Submit" id="editSubmit" onClick="event2()">
 
-            <input type="submit" value="Output person" onClick="outputPerson()">
+            <input type="submit" class="btn" value="Output person" onClick="outputPerson()">
 
-            <input type="submit" value="is between 20-40" onClick="isBetween20n40()">
+            <input type="submit" class="btn" value="is between 20-40" onClick="isBetween20n40()">
         </div>
 
         <br><br>

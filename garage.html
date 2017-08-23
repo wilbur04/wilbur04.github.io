@@ -3,6 +3,7 @@
 <head>
     <title> exercise </title>
     <script src="js/garage.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -15,13 +16,38 @@
 <body>
 
     <div class="col-xs-8 col-sm-6">
-        <br>Model:<br> <input type="text" name="name" id="model">
-        <br> Make:<br> <input type="text" name="name" id="make">
-        <br> Reg:<br> <input type="text" name="name" id="reg">
-        <br> price:<br> <input type="number" name="name" id="price">
-        <br> Number of Doors:<br> <input type="number" name="name" id="doors"><br>
-        <br>
-        <button type="button" class="btn btn-default" id="checkIn">Check In</button>
+        <div>
+            <br>Model:<br> <input type="text" name="name" id="model">
+            <br> Make:<br> <input type="text" name="name" id="brand">
+            <br> Reg:<br> <input type="text" name="name" id="reg">
+            <br> price:<br> <input type="number" name="name" id="price">
+            <br> Number of Doors:<br> <input type="number" name="name" id="doors"><br>
+            <br>
+            <button type="button" class="btn btn-default" id="checkIn" onClick="checkIn()">Check In</button>
+        </div>
+        <div>
+            <br>Enter car registraion to checkout:<br>
+            <input type="text" name="name" id="regOut">
+            <br>
+            <button type="button" class="btn btn-default" id="checkIn" onClick="checkOut()">Check Out</button>
+        </div>
+
+
+        <div id="listgarage">
+            <div>
+                <br>List cars in garage :<br>
+                <button type="button" class="btn btn-default" id="listcars" onClick="outputGarage()">List all cars</button>
+                <ul id="clist">
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <br>Enter car registraion to get bill:<br>
+            <input type="text" name="name" id="regBill">
+            <br>
+            <button type="button" class="btn btn-default" id="checkIn" onClick="getBill()">Get bill</button>
+        </div>
     </div>
 
 </body>
