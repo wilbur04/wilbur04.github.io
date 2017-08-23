@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-    <title> exercise </title>
+    <title> Level2 </title>
+    <script src="js/level2.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -48,7 +49,25 @@
         </div>
     </nav>
 
-    <h1>The worlds best homepage </h1>
-    <button type="select" href="exercise1.html" value="ExerciseSheet"></button>
+
+
+    <br>
+    <div id="dom1">
+        <input type="submit" value="Create p" id="editSubmit" onClick="createPara()">
+        <br> Text: <br><input type="text" name="name" id="paraText">
+        <input type="submit" value="Change text" onClick="changeParaText()">
+        <br>
+        <input type="submit" value="Delete" onClick="deletePara()">
+    </div>
+
+
+    <br>
+    <div id="shTextDiv">
+        <textarea id="shTextArea">
+
+    </textarea>
+    </div>
+
+
 
 </body>
