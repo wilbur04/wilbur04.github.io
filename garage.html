@@ -15,7 +15,7 @@
 
 <body>
 
-    <div class="col-xs-8 col-sm-6">
+    <div class="col-lg-8 col-sm-6">
         <div>
             <br>Model:<br> <input type="text" name="name" id="model">
             <br> Make:<br> <input type="text" name="name" id="brand">
@@ -48,6 +48,22 @@
             <br>
             <button type="button" class="btn btn-default" id="checkIn" onClick="getBill()">Get bill</button>
         </div>
+        <br>
+        <br>
+
+
     </div>
+    <div class="col-lg-8">
+        <!-- ADMIN INTERFACE -->
+        <br>ADMIN INTERFACE:<br>
+        <div id="interfaceDiv">
+            <textarea class="col-lg-8 col-sm-10" id="cliOutput"> </textarea>
+            <br>
+            <input type="text" name="name" id="cliInput">
+            <button type="button" class="btn btn-default" id="checkIn" onClick="cli()">Enter</button>
+        </div>
+    </div>
+
+
 
 </body>

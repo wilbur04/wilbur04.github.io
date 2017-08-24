@@ -2,7 +2,7 @@
 
 <head>
     <title> Level2 </title>
-    <script src="js/level2.js"></script>
+    <script src="js/level3.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -50,25 +50,20 @@
         </div>
     </nav>
 
+    <div class="col-lg-8 col-sm-6">
+        <div>
+            <br>Please enter your word: <br>
+            <input type="text" name="name" id="word">
+            <br> Number of squares to draw: <br>
+            <input type="number" id="number">
+            <input type="submit" value="Draw" class="btn" onClick="draw()">
+        </div>
+        <div id="drawdiv">
 
+        </div>
 
-    <br>
-    <div id="dom1">
-        <input type="submit" class="btn" value="Create p" id="editSubmit" onClick="createPara()">
-        <br> Text: <br><input type="text" name="name" id="paraText">
-        <input type="submit" class="btn" value="Change text" onClick="changeParaText()">
-        <br>
-        <input type="submit" class="btn" value="Delete" onClick="deletePara()">
     </div>
-
-
-    <br>
-    <div id="shTextDiv">
-        <textarea id="shTextArea">
-
-    </textarea>
-    </div>
-
-
 
 </body>
+
+</html>​
