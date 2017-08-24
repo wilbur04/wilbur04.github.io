@@ -139,5 +139,4 @@ function cli() {
         document.getElementById('cliOutput').append("> invalid command" + "\n");
     }
 
-
 }

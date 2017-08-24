@@ -5,9 +5,7 @@ body {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     /*TODO: change font and colours*/
 }
-/*edits by wilbur*/
-/* using button rather than btn from bootstrap because all methods from Bindings.js
- are making use of <button> */
+
 
 .btn:hover {
     transition: all 0.7s ease 0s;
@@ -16,5 +14,11 @@ body {
 Button:active {
     position:relative;
     top:1px;
+}
+
+.bg-img{
+background: url("../img/bg.jpg");
+height: 500px;
+width: 100%;
 }
 

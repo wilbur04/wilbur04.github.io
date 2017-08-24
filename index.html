@@ -1,55 +1,209 @@
 <!DOCTYPE html>
 
 <head>
-    <title> exercise </title>
+    <title> Wilbur </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/landing-page.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 </head>
 
 <body>
-
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <h1 class="navbar-brand">LOGO</h1>
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-toggle="collapse" data-target="#Navdrop">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-            </div>
-
-            <!-- items in nav bar!!-->
-            <div class="collapse navbar-collapse" id="Navdrop">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href=level1.html>
-                            <h2>Level1</h2>
-                        </a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Wilbur Fernandes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
                     </li>
-                    <li>
-                        <a href=level2.html>
-                            <h2>Level2</h2>
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
-                    <li>
-                        <a href=level1.html>
-                            <h2>Level3</h2>
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-
             </div>
         </div>
     </nav>
 
-    <h1>The worlds best homepage </h1>
-    <button type="select" href="exercise1.html" value="ExerciseSheet"></button>
+
+    <!-- Header -->
+    <header class="intro-header" id="head">
+        <div class="container">
+            <div class="intro-message">
+                <h1>The worlds best homepage</h1>
+                <h3>nothing realy to see here</h3>
+                <hr class="intro-divider">
+                <ul class="list-inline intro-social-buttons">
+                    <li class="list-inline-item">
+                        <a href="https://www.twitter.com/wlbrfernandes" class="btn btn-secondary btn-lg">
+                      <i class="fa fa-twitter fa-fw"></i>
+                      <span class="network-name">Twitter</span>
+                    </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/wilbur04" class="btn btn-secondary btn-lg">
+                      <i class="fa fa-github fa-fw"></i>
+                      <span class="network-name" >Github</span>
+                    </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/wlbrfernandes" class="btn btn-secondary btn-lg">
+                      <i class="fa fa-linkedin fa-fw"></i>
+                      <span class="network-name" >Linkedin</span>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="content-section-a" id="projects">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 ml-auto">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"><a href="level1.html">Level 1 - Basic</a></h2>
+                    <p class="lead">
+
+                    </p>
+                </div>
+                <div class="col-lg-5 mr-auto">
+                    <img class="img-fluid" src="img/ipad.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 mr-auto order-lg-2">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"><a href="level2.html">Level 2 - Intermediate</a></h2>
+                    <p class="lead">
+
+                    </p>
+                </div>
+                <div class="col-lg-5 ml-auto order-lg-1">
+                    <img class="img-fluid" src="img/dog.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </section>
+    <!-- /.content-section-b -->
+
+    <section class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 ml-auto">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"><a href="level3.html">Level 3 - Advanced</a></h2>
+                    <p class="lead">
+                    </p>
+                </div>
+                <div class="col-lg-5 mr-auto ">
+                    <img class="img-fluid" src="img/phones.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </section>
+
+
+    <aside class="banner" id="contact">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 my-auto">
+                    <h2>Contact Wilbur:</h2>
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <ul class="list-inline banner-social-buttons">
+                        <li class="list-inline-item">
+                            <a href="https://www.twitter.com/wlbrfernandes" class="btn btn-secondary btn-lg">
+                              <i class="fa fa-twitter fa-fw"></i>
+                              <span class="network-name">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/wilbur04" class="btn btn-secondary btn-lg">
+                              <i class="fa fa-github fa-fw"></i>
+                              <span class="network-name">Github</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/wlbrfernandes" class="btn btn-secondary btn-lg">
+                              <i class="fa fa-linkedin fa-fw"></i>
+                              <span class="network-name">Linkedin</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#head">Home</a>
+                </li>
+                <li class="footer-menu-divider list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                    <a href="#">About</a>
+                </li>
+                <li class="footer-menu-divider list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer-menu-divider list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <p class="copyright text-muted small">Copyright &copy; Your Company 2017. All Rights Reserved</p>
+        </div>
+    </footer>
 
 </body>
