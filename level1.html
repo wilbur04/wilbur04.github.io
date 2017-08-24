@@ -3,6 +3,8 @@
 <head>
     <title> Level1 </title>
     <script src="js/level1.js"></script>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/landing-page.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -14,78 +16,124 @@
 
 <body>
 
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <h1 class="navbar-brand">LOGO</h1>
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-toggle="collapse" data-target="#Navdrop">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-            </div>
-
-            <!-- items in nav bar!!-->
-            <div class="collapse navbar-collapse" id="Navdrop">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href=level1.html>
-                            <h2>Level1</h2>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=level2.html>
-                            <h2>Level2</h2>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=level3.html>
-                            <h2>Level3</h2>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-
-
-
-    <div>
-        <h2>FUNCTIONS 1 </h2>
-        <p>Create a function that accepts a number and returns its square
-            <br><b>Input-> 2 Output -> 4</b><br> Call your function and output your result via one of the three methods.
-        </p>
-
-        <input type="submit" class="btn" onclick="printName()" value="call function">
-        <br>
-        <h2>EVENTS 1 </h2>
-        <p>
-            Create a HTML button that calls a function when clicked.<br> The function that it calls should increase the age
-            of your person object.
-        </p>
-        <input type="submit" class="btn" onclick="events1()" value="Increase age">
-        <br><br>
-        <div>
-            <h2>FUNCTIONS 3 / EVENTS 2</h2>
-            <P>
-                Create a series of textboxes and buttons that let you create a Person object with data from the textboxes, output your Person
-                object, as well as edit your Person object.
-            </P>
-            <br>Name:<br> <input type="text" name="name" id="name">
-            <br> Age: <br><input type="number" id="age">
-            <br> Occupation: <br><input type="text" name="name" id="occupation">
-            <br><br>
-            <input type="submit" class="btn" value="Submit" id="editSubmit" onClick="event2()">
-
-            <input type="submit" class="btn" value="Output person" onClick="outputPerson()">
-
-            <input type="submit" class="btn" value="is between 20-40" onClick="isBetween20n40()">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <h1 class="navbar-brand">LOGO</h1>
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#Navdrop">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
         </div>
 
-        <br><br>
-        <p id="personText"></p>
-        <p id="isBetween2040"> </p>
+        <!-- items in nav bar!!-->
+        <div class="collapse navbar-collapse" id="Navdrop">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href=level1.html>
+                        <h2>Level1</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href=level2.html>
+                        <h2>Level2</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href=level3.html>
+                        <h2>Level3</h2>
+                    </a>
+                </li>
+            </ul>
 
+        </div>
     </div>
+</nav>
+
+
+<section class="content-section-a">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 ml-auto">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2>FUNCTIONS 2</h2>
+                <p>Create a function that accepts 3 numbers and returns the sum of them. <br>
+                    <b> Input-> 1,2,3 Output->6</b>
+                </p>
+                <h3 id="function2h3"></h3>
+                <input type="number" id="f2num1">
+                <input type="number" id="f2num2">
+                <input type="number" id="f2num3">
+                <input type="submit" class="btn" value="Add" onclick="function2ForScreen()">
+            </div>
+        </div>
+    </div>
+</section>
+<!--
+<input type="submit" class="btn" onclick="printName()" value="call function">
+<br>
+-->
+
+<section class="content-section-b">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8 mr-auto order-lg-2">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2>EVENTS 1 </h2>
+                <p>
+                    Create a HTML button that calls a function when clicked.<br> The function that it calls should
+                    increase the age
+                    of your person object.
+                    <br> (Check logs)
+                </p>
+                <input type="submit" class="btn" onclick="events1()" value="Increase age">
+
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+</section>
+<br><br>
+<section class="content-section-a" id="projects">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 ml-auto">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2>FUNCTIONS 3 / EVENTS 2</h2>
+                <P>
+                    Create a series of textboxes and buttons that let you create a Person object with data from the
+                    textboxes,
+                    output your Person
+                    object, as well as edit your Person object.
+                </P>
+                <br>Name:<br> <input type="text" name="name" id="name">
+                <br> Age: <br><input type="number" id="age">
+                <br> Occupation: <br><input type="text" name="name" id="occupation">
+                <br><br>
+                <input type="submit" class="btn" value="Submit" id="editSubmit" onClick="event2()">
+
+                <input type="submit" class="btn" value="Output person" onClick="outputPerson()">
+
+                <input type="submit" class="btn" value="is between 20-40" onClick="isBetween20n40()">
+
+                <br><br>
+                <p id="personText"></p>
+                <p id="isBetween2040"></p>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+</section>
+
+
+
 </body>

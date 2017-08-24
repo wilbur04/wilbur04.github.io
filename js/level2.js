@@ -65,7 +65,7 @@ function deletePara() {
     div.removeChild(para);
 }
 function json1() {
-    var requestURL = 'https://raw.githubusercontent.com/ewomackQA/JSONDataRepo/master/example.json';
+    var requestURL = 'Json1.json';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json'
@@ -103,13 +103,13 @@ function json1() {
             for (var q = 0; q < powers.length; q++) {
                 l4.append(" - " + powers[q]);
             }
-            document.getElementById('shTextDiv').appendChild(l1);
-            document.getElementById('shTextDiv').appendChild(l2);
-            document.getElementById('shTextDiv').appendChild(l3);
-            document.getElementById('shTextDiv').appendChild(l4);
-            document.getElementById('shTextDiv').appendChild(p5);
+            document.getElementById('shTextli').appendChild(l1);
+            document.getElementById('shTextli').appendChild(l2);
+            document.getElementById('shTextli').appendChild(l3);
+            document.getElementById('shTextli').appendChild(l4);
+            document.getElementById('shTextli').appendChild(p5);
         }
-        document.getElementById('shTextDiv').appendChild(myP);
+        document.getElementById('shTextli').appendChild(myP);
         console.log(requestData);
     }
 }

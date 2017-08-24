@@ -1,77 +1,156 @@
 <!DOCTYPE html>
 
 <head>
-    <title> Level2 </title>
-    <script src="js/level2.js"></script>
+    <title> Wilbur </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/landing-page.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Latest compiled and CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/level2.js"></script>
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 </head>
 
 <body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Wilbur Fernandes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html/#head">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <h1 class="navbar-brand">LOGO</h1>
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-toggle="collapse" data-target="#Navdrop">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+
+<!-- Page Content -->
+<section class="content-section-a" id="projects">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 ml-auto">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <div id="dom1">
+                    <input type="submit" class="btn" value="Create p" id="editSubmit" onClick="createPara()">
+                    <br> <br>Text: <input type="text" name="name" id="paraText"><br><br>
+                    <input type="submit" class="btn" value="Delete text" onClick="deletePara()">
+                    <input type="submit" class="btn" value="Change text" onClick="changeParaText()">
+
+                </div>
             </div>
+            <div class="col-lg-5 mr-auto">
+                <h3>DOM 1</h3>
+                <p>
+                    Create a function that creates a paragraph tag<br>
+                    Create another function that changes the text of that paragraph tag to what is in a
+                    textbox<br>
+                    Create another function that deletes the paragraph tag<br>
+                    All of these functions should be called with a button(s)<br>
+                </p>            </div>
+        </div>
 
-            <!-- items in nav bar!!-->
-            <div class="collapse navbar-collapse" id="Navdrop">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href=level1.html>
-                            <h2>Level1</h2>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=level2.html>
-                            <h2>Level2</h2>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=level3.html>
-                            <h2>Level3</h2>
+    </div>
+    <!-- /.container -->
+</section>
+
+<section class="content-section-b">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-5 mr-auto order-lg-2">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <div id="shTextli">
+                </div>
+            </div>
+            <div class="col-lg-5 ml-auto order-lg-1">
+                <h3>JSON 1</h3>
+                <p>
+                    Using basic JavaScript, access the JSON file.
+                    <br>Once loaded, display the objects retrieved in an organised fashion.
+                </p>
+                <div id="shTextDiv">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</section>
+<!-- /.content-section-b -->
+
+<aside class="banner" id="contact">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6 my-auto">
+                <h2>Contact Wilbur:</h2>
+            </div>
+            <div class="col-lg-6 my-auto">
+                <ul class="list-inline banner-social-buttons">
+                    <li class="list-inline-item">
+                        <a href="garage.html" class="btn btn-secondary btn-lg">
+                            <span class="network-name">Click to view Garage.</span>
                         </a>
                     </li>
                 </ul>
-
             </div>
         </div>
-    </nav>
 
-
-
-    <br>
-    <div id="dom1">
-        <input type="submit" class="btn" value="Create p" id="editSubmit" onClick="createPara()">
-        <br> Text: <br><input type="text" name="name" id="paraText">
-        <input type="submit" class="btn" value="Change text" onClick="changeParaText()">
-        <br>
-        <input type="submit" class="btn" value="Delete" onClick="deletePara()">
     </div>
+    <!-- /.container -->
 
+</aside>
 
-    <br>
-    <div id="shTextDiv">
-        <textarea id="shTextArea">
-
-    </textarea>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <ul class="list-inline">
+            <li class="list-inline-item">
+                <a href="#head">Home</a>
+            </li>
+            <li class="footer-menu-divider list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+                <a href="#">About</a>
+            </li>
+            <li class="footer-menu-divider list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+                <a href="#projects">Projects</a>
+            </li>
+            <li class="footer-menu-divider list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <p class="copyright text-muted small">Copyright &copy; Your Company 2017. All Rights Reserved</p>
     </div>
-
-
-
-
-
+</footer>
 
 </body>

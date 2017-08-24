@@ -114,6 +114,7 @@ function cliCheckOut(regi) {
 
 function cli() {
     let input = document.getElementById('cliInput').value;
+
     document.getElementById('cliOutput').append("$ " + input + "\n");
     let arr = input.split(" ");
     if (input.includes("create car")) {
@@ -138,5 +139,7 @@ function cli() {
     } else {
         document.getElementById('cliOutput').append("> invalid command" + "\n");
     }
+
+    document.getElementById('cliInput').value = "";
 
 }
