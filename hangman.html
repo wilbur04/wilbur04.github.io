@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="css/game.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <fieldset>
+        <form>
+            Select Level:<br>
+            <input type="radio" name="colors" id="easy" checked>Easy<br>
+            <input type="radio" name="colors" id="medium">Medium<br>
+            <input type="radio" name="colors" id="hard">Hard
+        </form>
+    </fieldset>
+    <button onClick="pickWord()">Start</button>
+
+    <img src="img/6.png" id="imgID" alt="image" style="width:304px;height:228px;">
+    <div id="wordDisplay">
+        <h1 id="myword"> </h1>
+    </div>
+
+    <div id="letterDIV">
+        <button disabled type="select" id="a" onclick="checkFor('a')">A </button>
+        <button disabled type="select" id="b" onclick="checkFor('b')">B </button>
+        <button disabled type="select" id="c" onclick="checkFor('c')">C </button>
+        <button disabled type="select" id="d" onclick="checkFor('d')">D </button>
+        <button disabled type="select" id="e" onclick="checkFor('e')">E </button>
+        <button disabled type="select" id="f" onclick="checkFor('f')">F </button> <br><br>
+        <button disabled type="select" id="g" onclick="checkFor('g')">G  </button>
+        <button disabled type="select" id="h" onclick="checkFor('h')">H </button>
+        <button disabled type="select" id="i" onclick="checkFor('i')">I </button>
+        <button disabled type="select" id="j" onclick="checkFor('j')">J </button>
+        <button disabled type="select" id="k" onclick="checkFor('k')">K </button>
+        <button disabled type="select" id="l" onclick="checkFor('l')">L </button><br><br>
+        <button disabled type="select" id="m" onclick="checkFor('m')">M </button>
+        <button disabled type="select" id="n" onclick="checkFor('n')">N </button>
+        <button disabled type="select" id="o" onclick="checkFor('o')">O </button>
+        <button disabled type="select" id="p" onclick="checkFor('p')">P </button>
+        <button disabled type="select" id="q" onclick="checkFor('q')">Q </button>
+        <button disabled type="select" id="r" onclick="checkFor('r')">R </button><br><br>
+        <button disabled type="select" id="s" onclick="checkFor('s')">S </button>
+        <button disabled type="select" id="t" onclick="checkFor('t')">T </button>
+        <button disabled type="select" id="u" onclick="checkFor('u')">U </button>
+        <button disabled type="select" id="v" onclick="checkFor('v')">V </button>
+        <button disabled type="select" id="w" onclick="checkFor('w')">W </button>
+        <button disabled type="select" id="x" onclick="checkFor('x')">X </button><br><br>
+        <button disabled type="select" id="y" onclick="checkFor('y')">Y </button>
+        <button disabled type="select" id="z" onclick="checkFor('z')">Z </button>
+    </div>
+
+    <h1 id="banner"> </h1>
+    <script src="js/game.js"></script>
+
+</body>
+
+</html>
