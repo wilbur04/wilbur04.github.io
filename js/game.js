@@ -60,6 +60,7 @@ function pickWord() {
         displayedWord += '_';
     }
     displayWord();
+    document.getElementById('startButton').value = "Refresh";
 }
 
 function displayWord() {
@@ -100,6 +101,7 @@ function gameOver() {
     document.getElementById('z').disabled = true;
 }
 function gameStart() {
+    document.getElementById('banner').innerHTML = "";
     document.getElementById('a').disabled = false;
     document.getElementById('b').disabled = false;
     document.getElementById('c').disabled = false;
